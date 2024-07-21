@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="utf-8">
+    <title>Ilmoittautumislomake</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Tapahtumaan ilmoittautumislomake</h1>
+    <form action="https://register-demo.freecodecamp.org" method="post">
+        <!--Action-linkki on vain siksi, että jotain tapahtuisi nappia painettaessa-->
+        <fieldset>
+            <legend>Yhteystiedot</legend>
+            <label for="enimi">Etunimi<input type="text" id="enimi"></label><br>
+            <label for="snimi">Sukunimi<input type="text" id="snimi"></label><br>
+            <label for="sposti">Sähköposti<input type="email" id="sposti"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Valinnat (laita rasti ruutuun, jos pätee sinuun)</legend>
+            <input type="checkbox" id="erityisruokavalio" value="Erityisruokavalio"">
+            <label for="erityisruokavalio">Erityisruokavalio</label>
+            <input type="checkbox" id="majoitus" value="Majoitus">
+            <label for="majoitus">Tarvitsee majoituksen</label>
+            <input type="checkbox" id="opiskelija" value="Opiskelija">
+            <label for="opiskelija">Opiskelija</label>
+            <input type="checkbox" id="kyyditys" value="Kyyditys">
+            <label for="kyyditys">Tarvitsee kyydin</label>
+            <input type="text" id="opiskelijanro" placeholder="Syötä opiskelijanumero" style="display:none">
+            <select id="kyydit" style="display:none">
+                <option value="tyhja">Valitse sopivin kyyti</option>
+                <option value="k1">Helsinki-Kuopio 08:00 ja 9:00</option>
+                <option value="k2">Tampere-Kuopio 10:00 ja 11:00</option>
+                <option value="k3">Jyväskylä-Kuopio 11:30 ja 12:30</option>
+                <option value="k4">Oulu-Kuopio 9:00 ja 10:00</option>
+                <option value="k5">Joensuu-Kuopio 11:30 ja 12:30</option>
+            </select>
+            <label for="eriruoka" style="display:none">Syötä tiedot erityisruokavaliosta: <br>
+                <textarea id="eriruoka" rows="3" cols="30"></textarea>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Muuta</legend>
+            <label>Täytyykö meidän ottaa vielä jotain huomioon? (Vastaa ei, jos ei tarvitse)
+                <textarea id="muuta" rows="5" cols="30"></textarea>
+            </label>
+            <label for="ehdot">
+                <input type="checkbox" id="ehdot" required>Hyväksyn <a href="https://www.freecodecamp.org/news/terms-of-service">käyttöehdot</a>
+            </label>
+        </fieldset>
+        <button type="submit" id="ilmoittaudu-btn">Ilmoittaudu</button>
+    </form>
+</body>
+</html>
