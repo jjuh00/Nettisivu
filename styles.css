@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #1b1b32;
+    color: white;
+    font-family: Tahoma;
+    font-size: 16px;
+}
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+h1 {
+    margin: 1em auto;
+    text-align: center;
+}
+form {
+    margin: 0 auto;
+    max-width: 500px;
+    min-height: 300px;
+    width: 60vm;
+    padding-bottom: 2em;
+}
+input, textarea {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: white;
+}
+select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+fieldset {
+    border: 1px solid white;
+    padding: 2rem 1rem 2rem 1rem;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+button {
+    display: block;
+    width: 60%;
+    height: 2em;
+    min-width: 300px;
+    background-color: #3b3b4f;
+    border-color: white;
+    margin: 1em auto 1em auto;
+    font-size: 1rem;
+}
+input[type="checkbox"] {
+    width: unset;
+    margin: 0 0.5rem 0 0;
+    vertical-align: middle;
+}
