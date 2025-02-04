@@ -1,1 +1,0 @@
-// Toteutus TS-scriptille on tulossa pian
